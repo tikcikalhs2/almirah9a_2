@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="iso-8859-1" />
+<title>Papier Et Lune</title>
+<style>
+body {
+  background-color: #E1E2CF;
+  font-family: "NEW Romantics", AMORIA, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+header h1 {
+  font-family: "NEW Romantics";
+  font-size: 60px;
+  color: #142314;
+  margin: 0;
+}
+
+header h1 span {
+  color: #707250;
+}
+
+header .slogan {
+  font-family: "NEW Romantics";
+  font-size: 22px;
+  color: #707250;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+/* NAVIGATION MENU */
+nav {
+  width: 80%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "NEW Romantics";
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Warna selang-seling */
+nav a:nth-child(odd) {
+  background-color: #A9BA9D; /* Laurel Green */
+}
+nav a:nth-child(even) {
+  background-color: #D8CAB8; /* Dark Vanilla */
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #F4C2C2; /* Baby Pink */
+  color: #000;
+}
+
+/* MARQUEE */
+.marquee-box {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #D0C1AC;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: AMORIA;
+  font-size: 22px;
+  color: #132053;
+}
+
+/* PRODUK GRID */
+.products {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* KOTAK PRODUK */
+.product {
+  background-color: #E1E2CF;
+  width: 260px;
+  height: 380px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* GAMBAR PRODUK */
+.product img {
+  width: 150px;
+  height: 218px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* NAMA PRODUK */
+.product-title {
+  font-family: "NEW Romantics";
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* HARGA */
+.price {
+  font-family: AMORIA;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Warna harga */
+.price.blue { background-color: #122863; }
+.price.lightblue { background-color: #96CEE0; color: #000033; }
+.price.gold { background-color: #DFAE79; color: #FFFFCC; }
+.price.green { background-color: #B1BF91; color: #303122; }
+.price.darkblue { background-color: #006699; color: #FFFFCC; }
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #707250;
+  font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Papier Et <span>Lune</span></h1>
+  <div class="slogan">Every Book Has a Memory - Come Find Yours!</div>
+</header>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="shopping guide.html">SHOPPING GUIDE</a>
+  <a href="catalog.html">CATALOG</a>
+  <a href="Profile.html">PROFILE</a></nav>
+
+<div class="marquee-box">
+  <marquee>BEST SELLER - "Every Book Has a Memory - Come Find Yours."</marquee>
+</div>
+
+<!-- PRODUK -->
+<div class="products">
+  <div class="product">
+    <img src="img/407screenshot_2020-11-11_at_13.35.59_ratio-16x9-removebg-preview.png" alt="Laut Bercerita">
+    <div class="product-title"><span style="color:#142314;">LAUT</span> <span style="color:#6699CC;">BERCERITA</span></div>
+    <div class="price blue">Rp. 200.000</div>
+  </div>
+
+  <div class="product">
+    <img src="img/hello-cello1-removebg-preview.png" alt="Hello Cello">
+    <div class="product-title"><span style="color:#8A1129;">HELLO</span> <span style="color:#669999;">CELLO</span></div>
+    <div class="price lightblue">Rp. 175.000</div>
+  </div>
+
+  <div class="product">
+    <img src="img/Malioboro-at-Midnight-removebg-preview.png" alt="Malioboro at Midnight">
+    <div class="product-title"><span style="color:#CC3300;">MALIOBORO</span> AT MIDNIGHT</div>
+    <div class="price gold">Rp. 210.000</div>
+  </div>
+
+  <div class="product">
+    <img src="img/Alster-Lake-removebg-preview.png" alt="Alster Lake">
+    <div class="product-title"><span style="color:#4A290B;">ALSTER</span> <span style="color:#707250;">LAKE</span></div>
+    <div class="price green">Rp. 110.000</div>
+  </div>
+
+  <div class="product">
+    <img src="img/EKNATH-removebg-preview.png" alt="Eknath">
+    <div class="product-title"><span style="color:#000033;">EK</span><span style="color:#FF0000;">NA</span><span style="color:#6699CC;">TH</span></div>
+    <div class="price lightblue">Rp. 175.000</div>
+  </div>
+
+  <div class="product">
+    <img src="img/novel-karya-tere-liye-Hujan-removebg-preview.png" alt="Hujan">
+    <div class="product-title" style="color:#6699CC;">HUJAN</div>
+    <div class="price darkblue">Rp. 98.000</div>
+  </div>
+</div>
+
+<footer>
+  &copy; Papier Et Lune Bookstore
+</footer>
+
+</body>
+</html>
